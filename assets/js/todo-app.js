@@ -1,4 +1,4 @@
-var App = (function controller(App, fb) {
+var App = (function controller(App) {
 
 	var addTodo = function() {
 		App.data.addTodo();
@@ -21,4 +21,4 @@ var App = (function controller(App, fb) {
 	};
 
 	return App;
-}(App || {}, firebase));
+}(App || {}));
