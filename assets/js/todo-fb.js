@@ -40,7 +40,7 @@ var App = (function todoFB(App, fb) {
 		}
 	};
 
-	var remoteTodo = function(i) {
+	var removeTodo = function(i) {
 		var todoItem = document.getElementById("td-item-" + i);
 		todoList.splice(i, 1);
 		insertTodos(todoList);
@@ -56,7 +56,7 @@ var App = (function todoFB(App, fb) {
 
 	App.data = {
 		addTodo: addTodo,
-		remoteTodo: remoteTodo,
+		removeTodo: removeTodo,
 	};
 
 	return App;

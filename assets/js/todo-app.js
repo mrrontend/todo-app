@@ -5,7 +5,7 @@ var App = (function controller(App, fb) {
 	};
 
 	var removeTodo = function(i) {
-		App.data.remoteTodo(i);
+		App.data.removeTodo(i);
 	};
 
 	var textInputKeyup = function(event) {
