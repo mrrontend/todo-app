@@ -37,9 +37,12 @@ var App = (function controller(App, fb) {
 	};
 
 	var addTodo = function() {
-		var todoText = document.getElementById("todo-text").value;
-		todoList.push(todoText);
-		saveTodos(todoList);
+		var todoText = document.getElementById("todo-text");
+		if(todoText.value !== "") {
+			todoList.push(todoText.value);
+			todoText.value = "";
+			saveTodos(todoList);
+		}
 	};
 
 	var removeTodo = function(i) {
@@ -48,11 +51,18 @@ var App = (function controller(App, fb) {
 		saveTodos(todoList);
 	};
 
+	var textInputKeyup = function(event) {
+		if(event.keyCode === 13) {
+			addTodo();
+		}
+	};
+
 	init();
 
 	App.controller = {
 		addTodo: addTodo,
 		removeTodo: removeTodo,
+		textInputKeyup: textInputKeyup,
 	};
 
 	return App;

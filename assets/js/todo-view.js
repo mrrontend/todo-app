@@ -9,7 +9,7 @@ var App = (function view(App) {
 		var todoBtn = document.createElement("button");
 		todoBtn.type = "button";
 		todoBtn.name = "rm-todo-" + i;
-		todoBtn.textContent = "Rm";
+		todoBtn.textContent = "\u2717";
 		todoBtn.className = "rm-todo-btn";
 		todoBtn.addEventListener("click", function() {
 			App.controller.removeTodo(i);
