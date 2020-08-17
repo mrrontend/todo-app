@@ -19,13 +19,13 @@
 			<div class="row">
 			   <div class="col-md-4">
 					<div>
-						<label for="todo-text">Todo:</label>
+						<label for="todo-text">Tasks:</label>
 						<input id="todo-text" type="text" onkeyup="App.controller.textInputKeyup(event);"/>
 					</div>
                                         <br/>
                                         <br/>
 					<div>
-						<input id="add-td-btn" class="btn btn-primary" type="button" name="button" onclick="App.controller.addTodo();" value="Add Todo" />
+						<input id="add-td-btn" class="btn btn-primary" type="button" name="button" onclick="App.controller.addTodo();" value="+ Add Task" />
 					</div>
 			   </div>
 			 </div>
@@ -39,9 +39,9 @@
 <div class="col-md-8">
 					<div class="card">
 						<div class="card-block">
-							<h4 class="card-title">ToDos</h4>
+							<h4 class="card-title">Tasks</h4>
 							<div id="todo-list" class="card-text">
-								Enter your todos on the right.
+								
 							</div>
 						</div>
 					</div>
